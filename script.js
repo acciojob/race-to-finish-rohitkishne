@@ -1,5 +1,5 @@
 window.promises = [];
-
+const container = document.getElementById("output")
 let a = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("output")
@@ -33,7 +33,7 @@ promise.push(e);
 let ans = Promise.any([a,b,c,d,e])
 
 ans.then(data => {
-	return data;
+	return container;
 })
 
 // Do not change the code above this
