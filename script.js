@@ -25,7 +25,11 @@ let e = new Promise((resolve, reject) => {
         resolve("output")
     }, 5000);
 })
-
+promise.push(a);
+promise.push(b);
+promise.push(c);
+promise.push(d);
+promise.push(e);
 let ans = Promise.any([a,b,c,d,e])
 
 ans.then(data => {
